@@ -14,7 +14,7 @@ def make_priors(num_samples: int):
 
     Returns:
     --------
-    json:
+    pkl:
       Dictionary containing the prior samples.
     """
 
