@@ -1,0 +1,20 @@
+# Here you can define all your datasets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+
+priors_raw:
+  type: pickle.PickleDataset
+  filepath: data/02_intermediate/priors_raw.pkl
+
+observation_time:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/observation_time.csv
+
+likelihood_params:
+  type: json.JSONDataset
+  filepath: conf/base/likelihood_params.json
+
+results:
+  type: pickle.PickleDataset
+  filepath: data/08_reporting/bilby_result.pkl
