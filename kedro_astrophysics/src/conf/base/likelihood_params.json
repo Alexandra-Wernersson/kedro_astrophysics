@@ -1,8 +1,0 @@
-{
-  "sigma": 3,
-  "sampler": "dynesty",
-  "nlive": 500,
-  "sample": "unif",
-  "outdir": "data/08_reporting",
-  "label": "linear_regression"
-}
