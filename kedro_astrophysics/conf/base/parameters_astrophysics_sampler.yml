@@ -1,0 +1,18 @@
+# This is a boilerplate parameters config generated for pipeline 'astrophysics_sampler'
+# using Kedro 1.0.0.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/1.0.0/configuration/parameters.html
+
+observation_time:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/observation_time.csv
+
+# If you’ve already built priors and saved them
+priors:
+  type: json.JSONDataSet
+  filepath: data/01_raw/priors.json
+
+likelihood_params:
+  type: kedro.extras.datasets.json.JSONDataSet
+  filepath: conf/base/likelihood_params.json
